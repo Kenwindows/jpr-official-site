@@ -1,37 +1,41 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>JPプロダクトリテイリング</title><script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{--blue:#1e88e5;--bg:#eaf6ff;}
-body{scroll-behavior:smooth;}
-.fade{opacity:0;transform:translateY(40px);}
-@keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+:root{--bg:#fffbe9;--blue:#3b82f6;}
+body{scroll-behavior:smooth;font-family:'Noto Sans JP',sans-serif;background:var(--bg);}
+.section-img{border-radius:1rem;box-shadow:0 6px 20px rgba(0,0,0,.15);}
 </style>
 <script>
-document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.fade').forEach((el,i)=>{el.style.animation=`fadeUp .8s ease-out forwards`;el.style.animationDelay=`${i*0.1}s`;});});
+document.addEventListener('DOMContentLoaded',()=>{const els=document.querySelectorAll('.animate__animated');els.forEach((el,i)=>{el.style.setProperty('--animate-delay',`${i*0.1}s`);});});
 </script>
-</head>
-<body class="font-sans text-gray-800 bg-white">
-<nav class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-gray-200"><div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-<a href="#" class="text-2xl font-bold text-[var(--blue)]">JPR</a>
-<ul class="hidden md:flex gap-6 text-sm font-medium">
-<li><a href="#content" class="hover:text-[var(--blue)]">原文全文</a></li>
-<li><a href="#contact" class="hover:text-[var(--blue)]">お問い合わせ</a></li>
-</ul></div></nav>
+</head><body class="text-gray-800">
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+ <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+  <span class="text-2xl font-bold text-[var(--blue)]">JPR</span>
+  <a href="#contact" class="hidden md:inline-block bg-[var(--blue)] text-white px-5 py-2 rounded-full shadow">お問い合わせ</a>
+ </div>
+</nav>
 
 <header class="relative overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-white to-[var(--bg)]"></div>
-<div class="relative max-w-5xl mx-auto text-center px-4 py-24">
-<h1 class="fade text-4xl md:text-5xl font-extrabold text-[var(--blue)] mb-6">無料で世界へ。</h1>
-<p class="fade text-lg md:text-xl mb-8">あなたの商品をリスクゼロで海外展開</p>
-<img src="images/hero.png" class="fade w-full max-w-4xl mx-auto rounded-xl shadow-lg" alt="">
-<a href="#contact" class="fade inline-block mt-12 bg-[var(--blue)] text-white px-10 py-3 rounded-full shadow hover:opacity-90">無料相談はこちら</a>
-</div></header>
+ <div class="absolute inset-0 bg-gradient-to-br from-white to-[#d6e6ff]"></div>
+ <div class="relative max-w-5xl mx-auto text-center px-4 py-24">
+  <h1 class="animate__animated animate__fadeInUp text-4xl md:text-5xl font-extrabold text-[var(--blue)] mb-6">無料で世界へ。</h1>
+  <p class="animate__animated animate__fadeInUp text-lg md:text-xl mb-8">あなたの商品を、リスクゼロで海外展開</p>
+  <img src="images/hero.png" alt="Hero" class="animate__animated animate__zoomIn section-img mx-auto w-full max-w-4xl">
+ </div>
+</header>
 
-<section id="content" class="py-20 bg-[var(--bg)]"><div class="max-w-6xl mx-auto px-4">
-<h2 class="fade text-3xl font-bold mb-8 text-center">オリジナル文章（全行）</h2>
-<article class="fade bg-white p-6 rounded-lg shadow-md overflow-x-auto whitespace-pre-wrap leading-relaxed">
+<section class="py-20">
+ <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+  <img src="images/services.png" class="animate__animated animate__fadeInLeft section-img w-full" alt="">
+  <img src="images/risk.png" class="animate__animated animate__fadeInRight section-img w-full" alt="">
+ </div>
+</section>
 
-JPプロダクトリテイリング 
+<section id="text" class="py-20">
+ <div class="max-w-6xl mx-auto bg-white p-8 rounded-xl shadow-md">
+  <pre class="whitespace-pre-wrap leading-loose">JPプロダクトリテイリング 
 
 * 事業内容
 * サービス
@@ -117,23 +121,22 @@ JPプロダクトリテイリング
 Email: contact@japan-product-retail.com
 
 © 2024 JPプロダクトリテイリング合同会社. All rights reserved.
+</pre>
+ </div>
+</section>
 
-</article>
-</div></section>
+<section id="contact" class="py-20">
+ <div class="max-w-3xl mx-auto text-center px-4">
+  <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInUp">お問い合わせ</h2>
+  <form action="mailto:contact@japan-product-retail.com" method="post" enctype="text/plain" class="space-y-4 animate__animated animate__fadeInUp">
+   <input class="w-full p-3 border rounded" placeholder="お名前" required>
+   <input type="email" class="w-full p-3 border rounded" placeholder="メールアドレス" required>
+   <textarea rows="4" class="w-full p-3 border rounded" placeholder="お問い合わせ内容" required></textarea>
+   <button class="bg-[var(--blue)] text-white px-8 py-3 rounded-full shadow">送信</button>
+  </form>
+  <img src="images/contact.png" alt="Contact" class="animate__animated animate__zoomIn section-img mx-auto mt-10 w-full max-w-md">
+ </div>
+</section>
 
-<section id="visual" class="py-20"><div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-<img src="images/services.png" class="fade rounded shadow-lg" alt=""><img src="images/risk.png" class="fade rounded shadow-lg" alt=""></div></section>
-
-<section id="contact" class="py-20 bg-[var(--bg)]"><div class="max-w-3xl mx-auto px-4 text-center">
-<h2 class="fade text-3xl font-bold mb-6">お問い合わせ</h2>
-<form class="fade space-y-4" action="mailto:contact@japan-product-retail.com" method="post" enctype="text/plain">
-<input required placeholder="お名前" class="w-full p-3 border rounded">
-<input type="email" required placeholder="メールアドレス" class="w-full p-3 border rounded">
-<textarea required placeholder="お問い合わせ内容" rows="4" class="w-full p-3 border rounded"></textarea>
-<button class="bg-[var(--blue)] text-white px-8 py-3 rounded-full shadow hover:opacity-90">送信</button>
-</form>
-<img src="images/contact.png" class="fade mx-auto mt-12 w-full max-w-md rounded shadow-lg" alt="">
-</div></section>
-
-<footer class="bg-[#e3f2fd] py-6 text-center text-sm">© 2024 JPプロダクトリテイリング合同会社. All rights reserved.</footer>
+<footer class="bg-[#d6e6ff] py-6 text-center text-sm text-gray-700">© 2024 JPプロダクトリテイリング合同会社.</footer>
 </body></html>
