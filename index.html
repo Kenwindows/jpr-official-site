@@ -1,31 +1,139 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JPR</title><script src="https://cdn.tailwindcss.com"></script>
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JPプロダクトリテイリング</title><script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{--accent:#1e88e5;}
+:root{--blue:#1e88e5;--bg:#eaf6ff;}
+body{scroll-behavior:smooth;}
 .fade{opacity:0;transform:translateY(40px);}
 @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
 </style>
 <script>
-window.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.fade').forEach((el,i)=>{el.style.animation=`fadeUp .8s ease-out forwards`;el.style.animationDelay=`${i*0.15}s`;});});
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.fade').forEach((el,i)=>{el.style.animation=`fadeUp .8s ease-out forwards`;el.style.animationDelay=`${i*0.1}s`;});});
 </script>
-</head><body class="bg-white text-gray-800 font-sans">
-<nav class="sticky top-0 bg-white/70 backdrop-blur border-b border-gray-200 z-50"><div class="max-w-7xl mx-auto px-4 py-3 flex justify-between">
-<a class="text-2xl font-bold text-[#1e88e5]" href="#">JPR</a><ul class="hidden md:flex gap-6 text-sm"><li><a href="#business">事業内容</a></li><li><a href="#risk">リスク対策</a></li><li><a href="#contact">お問い合わせ</a></li><li><a href="/en/">EN</a></li></ul></div></nav>
-<section class="relative">
-<div class="absolute inset-0 bg-gradient-to-br from-white to-[#eaf6ff]"></div>
-<div class="relative max-w-7xl mx-auto px-4 py-24 text-center"><h1 class="fade text-4xl md:text-5xl font-extrabold text-[#1e88e5] mb-6">無料で世界へ。</h1>
-<p class="fade mb-8 text-lg md:text-xl">あなたの商品をリスクゼロで海外展開</p>
-<img class="fade mx-auto rounded-xl shadow-lg w-full max-w-4xl" src="images/hero.png" alt="">
-<a class="fade inline-block mt-12 px-10 py-3 bg-[#1e88e5] text-white rounded-full shadow" href="#contact">無料相談はこちら</a></div></section>
-<section id="business" class="py-20 bg-[#f8fbff]"><div class="max-w-5xl mx-auto px-4"><h2 class="fade text-3xl font-bold mb-6">事業内容</h2>
-<p class="fade mb-8">弊社はお客様の商品の輸出販売代理と、自社商品の輸出販売を行い、170以上の国へ展開しています。手数料は海外購入者が負担するため、お客様の費用はゼロです。</p>
-<img class="fade mx-auto rounded shadow-lg w-full max-w-3xl" src="images/services.png" alt=""></div></section>
-<section id="risk" class="py-20"><div class="max-w-5xl mx-auto px-4"><h2 class="fade text-3xl font-bold mb-8 text-center">リスク対策</h2>
-<div class="grid md:grid-cols-2 items-center gap-8 fade"><ul class="list-disc list-inside space-y-2 text-lg">
-<li>返品・詐欺対応</li><li>商標・特許トロール対策</li><li>禁制品チェック</li><li>為替・送料変動ヘッジ</li></ul>
-<img class="rounded shadow-lg" src="images/risk.png" alt=""></div></div></section>
-<section id="contact" class="py-20 bg-[#f8fbff]"><div class="max-w-3xl mx-auto px-4 text-center"><h2 class="fade text-3xl font-bold mb-6">お問い合わせ</h2><p class="fade mb-6">お気軽にご相談ください。</p>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+<nav class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-gray-200"><div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+<a href="#" class="text-2xl font-bold text-[var(--blue)]">JPR</a>
+<ul class="hidden md:flex gap-6 text-sm font-medium">
+<li><a href="#content" class="hover:text-[var(--blue)]">原文全文</a></li>
+<li><a href="#contact" class="hover:text-[var(--blue)]">お問い合わせ</a></li>
+</ul></div></nav>
+
+<header class="relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-white to-[var(--bg)]"></div>
+<div class="relative max-w-5xl mx-auto text-center px-4 py-24">
+<h1 class="fade text-4xl md:text-5xl font-extrabold text-[var(--blue)] mb-6">無料で世界へ。</h1>
+<p class="fade text-lg md:text-xl mb-8">あなたの商品をリスクゼロで海外展開</p>
+<img src="images/hero.png" class="fade w-full max-w-4xl mx-auto rounded-xl shadow-lg" alt="">
+<a href="#contact" class="fade inline-block mt-12 bg-[var(--blue)] text-white px-10 py-3 rounded-full shadow hover:opacity-90">無料相談はこちら</a>
+</div></header>
+
+<section id="content" class="py-20 bg-[var(--bg)]"><div class="max-w-6xl mx-auto px-4">
+<h2 class="fade text-3xl font-bold mb-8 text-center">オリジナル文章（全行）</h2>
+<article class="fade bg-white p-6 rounded-lg shadow-md overflow-x-auto whitespace-pre-wrap leading-relaxed">
+
+JPプロダクトリテイリング 
+
+* 事業内容
+* サービス
+* リスク対策
+* お問い合わせ
+
+# 無料で世界へ。  
+あなたの商品を、リスクゼロで海外展開
+
+中小企業・個人事業主様の海外進出を、完全無料でサポートいたします。170以上の国と地域へ、50,000品目以上の商品を展開中。
+
+## 事業内容
+
+弊社の主な事業は、お客様の商品の輸出販売代理と、自社商品の輸出販売でございます。
+
+完全無料の輸出代行サービス
+
+お客様の商品の販売代理につきましては、お客様に一切のご料金をご負担いただくことなく、無償 で行っております。法人、個人事業主を問わず、無償で輸出代理を行い、海外の販路拡大のお手伝いをさせていただいております。
+
+## 無償サービスの仕組み
+
+無償でこのようなサービスを提供している理由につきましては、お客様からお金をいただくのではなく、海外の購入者様から手数料をいただいているためでございます。お客様にご負担いただく発生するコスト、リスク、トラブルは一切ございません。その全てを弊社が負担させていただきます。
+
+リスクゼロ、コストゼロの海外展開
+
+例えば、お客様が国内で1万円で販売されている商品が、リスクもコストもなく、そのままの価格の1万円で世界中に販売できるとすれば、かなり魅力的ではないでしょうか。もちろん、今まで通り国内での販売も継続しながらのことでございます。
+
+弊社は、販売代理をさせていただくお客様から料金を請求することはございませんが、海外で販売する際、海外の購入者様から手数料をいただく形式を取らせていただいております。そのため、実際には1万円の商品に対して、送料や様々な手数料を追加して販売いたしますが、お客様は国内で1万円で販売するのと全く同じ利益をお得いただくことが可能でございます。
+
+## 輸出リスクとその対策
+
+輸出する際に発生するコスト、リスク、トラブルには以下のようなものが考えられます：
+
+* 海外の購入者による返品
+* 海外の購入者による詐欺
+* 相手側の輸入関税支払い拒否による受取拒否
+* パテントトロールや商標トロールの脅威（後述いたします）
+* 輸出に関しての禁制品や、各国の輸入に関する禁制品
+* 輸出に関する様々な許可の取得
+* 現地通貨を受け取るための海外口座の取得
+* インコタームズと呼ばれる貿易取引に関する国際規定の理解
+* 国内の配送会社だけでなく、海外での配送会社との連携の必要性
+* 輸出入のための（返品を受け入れる際は輸入するため）知識
+* サーチャージ、容積重量によって変化する不確定な送料
+* 為替の変動による利益の変動
+* 各国に支払うべき手数料
+* 輸出入に詳しい税理士の必要性
+
+安心の全面サポート
+
+これらの輸出に関する件は全て弊社が負担させていただきますので、お客様はこのようなご心配を一切することなく、商品を海外に展開していただけます。
+
+### パテントトロール・商標トロールへの対策
+
+上記の問題で、特に最近話題になっておりますのは、日本の中小企業や個人事業主様をターゲットとしたパテント（特許）トロールや商標トロールの脅威でございます。X（旧Twitter）でお調べいただきますと、ほぼ毎日、このことに関して話題になっていることがおわかりいただけると存じます。それほど日本人にとって脅威となっております。
+
+このパテントトロールや商標トロールというのは、海外の法の抜け穴を利用した、かなり悪質なビジネスモデルでございまして、簡単に申し上げますと、製品などを一切製造しないにもかかわらず、特許権の行使のみを行い、高額な訴訟を行う企業や弁護士事務所でございます。和解金ビジネスとも呼ばれております（その理由は後述いたします）。
+
+パテントトロールは、GoogleやAppleなども被害に遭っております。わかりやすい有名な例といたしましては、ポケモンがポケットモンスターという名称を使用しておりますが、これをモンスターエナジードリンクのメーカーであるMonster Beverageが、モンスターという名称は自社のものだと訴えたものがございます。モンスターという表現は大昔からあるものでございますし、それの権利を主張するというのは、ポケモン側からすると、かなり理不尽に思える話でございます。現行法では取り締まることはできません。
+
+このような大企業は、この理不尽な訴えに対して、真っ向から勝負することもできますが、中小企業はそうもまいりません。というのも、この訴訟を起こされますと、プラットフォーム側の口座と、海外で使用している口座、それにまつわるアカウント、資産は全て、裁判所側から差し押さえされ停止されてしまいます。
+
+そのため、無視することは絶対にできないのでございますが、この理不尽な訴訟に戦うには、多額の報酬が必要な訴訟弁護士を雇う必要がございます。一般的には知財訴訟には、３人の訴訟弁護士が必要で、日本円で2億円から3億円ほどかかります。訴訟を行えば、ほぼ確実に勝てるような案件でございますが、そのようなコストを裁判のためだけに中小企業は払うことは難しいと存じます。
+
+そのため、訴訟を受けた中小企業や個人事業主の皆様は、和解金を支払うしかなくなってしまいます。このことに味を占めた悪徳集団が、和解金を目的として、かなり理不尽な形で片っ端から、輸出を行っている日本人の企業や個人事業主を一回で数百~数千件と標的にしております。
+
+弊社の対策
+
+弊社はそのような悪徳ビジネスモデルの方々から標的にならないよう、専門チームで対策を行っております。弊社は数万件にもおよぶ商品を輸出しているため、輸出する際のノウハウは全て持ち合わせております。まずはお気軽にご相談いただければ幸いでございます。
+
+## お問い合わせ
+
+海外展開についてのご相談は、以下のフォームからお気軽にお問い合わせください。 
+
+当社は沖縄県公安委員会許可の古物商です（許可番号 第971052200606号）
+
+### JPプロダクトリテイリング合同会社
+
+代表: 島袋 謙
+
+〒904-0116 沖縄県中頭郡北谷町字伊平204番地ベアーズコート桑江タウンリゾート801
+
+Email: contact@japan-product-retail.com
+
+© 2024 JPプロダクトリテイリング合同会社. All rights reserved.
+
+</article>
+</div></section>
+
+<section id="visual" class="py-20"><div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+<img src="images/services.png" class="fade rounded shadow-lg" alt=""><img src="images/risk.png" class="fade rounded shadow-lg" alt=""></div></section>
+
+<section id="contact" class="py-20 bg-[var(--bg)]"><div class="max-w-3xl mx-auto px-4 text-center">
+<h2 class="fade text-3xl font-bold mb-6">お問い合わせ</h2>
 <form class="fade space-y-4" action="mailto:contact@japan-product-retail.com" method="post" enctype="text/plain">
-<input class="w-full p-3 border rounded" placeholder="お名前" required><input type="email" class="w-full p-3 border rounded" placeholder="メール" required><textarea class="w-full p-3 border rounded" rows="4" placeholder="お問い合わせ内容" required></textarea><button class="px-8 py-3 bg-[#1e88e5] text-white rounded-full shadow">送信</button></form>
-<img class="fade mx-auto mt-12 rounded shadow-lg w-full max-w-md" src="images/contact.png" alt=""></div></section>
-<footer class="bg-[#e3f2fd] py-6 text-center text-sm text-gray-600">© 2025 JPプロダクトリテイリング合同会社.</footer></body></html>
+<input required placeholder="お名前" class="w-full p-3 border rounded">
+<input type="email" required placeholder="メールアドレス" class="w-full p-3 border rounded">
+<textarea required placeholder="お問い合わせ内容" rows="4" class="w-full p-3 border rounded"></textarea>
+<button class="bg-[var(--blue)] text-white px-8 py-3 rounded-full shadow hover:opacity-90">送信</button>
+</form>
+<img src="images/contact.png" class="fade mx-auto mt-12 w-full max-w-md rounded shadow-lg" alt="">
+</div></section>
+
+<footer class="bg-[#e3f2fd] py-6 text-center text-sm">© 2024 JPプロダクトリテイリング合同会社. All rights reserved.</footer>
+</body></html>
