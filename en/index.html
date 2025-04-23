@@ -1,16 +1,31 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Japan Product Retail</title>
-<script src="https://cdn.tailwindcss.com"></script></head>
-<body class="font-sans bg-[#fdfdfd] text-gray-800">
-<nav class="bg-[#FDEDEC] sticky top-0 z-50 shadow"><div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
-<a href="/en/" class="text-2xl font-bold text-[#FF6B6B]">JPR</a><ul class="hidden md:flex space-x-6">
-<li><a href="/" class="hover:text-[#FF6B6B]">JP</a></li></ul></div></nav>
-<section class="py-24 bg-gradient-to-r from-[#FDEDEC] to-[#E8F8F5]"><div class="max-w-3xl mx-auto text-center px-4">
-<h1 class="text-4xl font-extrabold mb-6">English Version Coming Soon</h1>
-<p class="text-lg">Please switch to the Japanese version for full information.</p>
-<img src="../images/hero.png" alt="Hero" class="mx-auto mt-8 w-full max-w-md rounded shadow"></div></section>
-<footer class="bg-[#D6EAF8] py-6 text-center"><p>© 2024 Japan Product Retail LLC.</p></footer>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JPR</title><script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--accent:#1e88e5;}
+.fade{opacity:0;transform:translateY(40px);}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+</style>
+<script>
+window.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.fade').forEach((el,i)=>{el.style.animation=`fadeUp .8s ease-out forwards`;el.style.animationDelay=`${i*0.15}s`;});});
+</script>
+</head><body class="bg-white text-gray-800 font-sans">
+<nav class="sticky top-0 bg-white/70 backdrop-blur border-b border-gray-200 z-50"><div class="max-w-7xl mx-auto px-4 py-3 flex justify-between">
+<a class="text-2xl font-bold text-[#1e88e5]" href="#">JPR</a><ul class="hidden md:flex gap-6 text-sm"><li><a href="#business">Services</a></li><li><a href="#risk">Risk Control</a></li><li><a href="#contact">Contact</a></li><li><a href="/en/">EN</a></li></ul></div></nav>
+<section class="relative">
+<div class="absolute inset-0 bg-gradient-to-br from-white to-[#eaf6ff]"></div>
+<div class="relative max-w-7xl mx-auto px-4 py-24 text-center"><h1 class="fade text-4xl md:text-5xl font-extrabold text-[#1e88e5] mb-6">Go Global for Free</h1>
+<p class="fade mb-8 text-lg md:text-xl">We expand your products worldwide with zero risk</p>
+<img class="fade mx-auto rounded-xl shadow-lg w-full max-w-4xl" src="images/hero.png" alt="">
+<a class="fade inline-block mt-12 px-10 py-3 bg-[#1e88e5] text-white rounded-full shadow" href="#contact">無料相談はこちら</a></div></section>
+<section id="business" class="py-20 bg-[#f8fbff]"><div class="max-w-5xl mx-auto px-4"><h2 class="fade text-3xl font-bold mb-6">Services</h2>
+<p class="fade mb-8">弊社はお客様の商品の輸出販売代理と、自社商品の輸出販売を行い、170以上の国へ展開しています。手数料は海外購入者が負担するため、お客様の費用はゼロです。</p>
+<img class="fade mx-auto rounded shadow-lg w-full max-w-3xl" src="images/services.png" alt=""></div></section>
+<section id="risk" class="py-20"><div class="max-w-5xl mx-auto px-4"><h2 class="fade text-3xl font-bold mb-8 text-center">Risk Control</h2>
+<div class="grid md:grid-cols-2 items-center gap-8 fade"><ul class="list-disc list-inside space-y-2 text-lg">
+<li>返品・詐欺対応</li><li>商標・特許トロール対策</li><li>禁制品チェック</li><li>為替・送料変動ヘッジ</li></ul>
+<img class="rounded shadow-lg" src="images/risk.png" alt=""></div></div></section>
+<section id="contact" class="py-20 bg-[#f8fbff]"><div class="max-w-3xl mx-auto px-4 text-center"><h2 class="fade text-3xl font-bold mb-6">Contact</h2><p class="fade mb-6">お気軽にご相談ください。</p>
+<form class="fade space-y-4" action="mailto:contact@japan-product-retail.com" method="post" enctype="text/plain">
+<input class="w-full p-3 border rounded" placeholder="お名前" required><input type="email" class="w-full p-3 border rounded" placeholder="メール" required><textarea class="w-full p-3 border rounded" rows="4" placeholder="Contact内容" required></textarea><button class="px-8 py-3 bg-[#1e88e5] text-white rounded-full shadow">送信</button></form>
+<img class="fade mx-auto mt-12 rounded shadow-lg w-full max-w-md" src="images/contact.png" alt=""></div></section>
+<footer class="bg-[#e3f2fd] py-6 text-center text-sm text-gray-600">© 2025 JPプロダクトリテイリング合同会社.</footer></body></html>
