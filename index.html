@@ -1,133 +1,144 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JPプロダクトリテイリング</title><script src="https://cdn.tailwindcss.com"></script>
-<style>
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-body{font-family:'Noto Sans JP',sans-serif;background:#ffffff;color:#333;scroll-behavior:smooth;}
-.hero-bg{background:linear-gradient(180deg,#ffffff 0%,#f0f5ff 100%);}
-.img-card{border-radius:1rem;box-shadow:0 6px 20px rgba(0,0,0,.15);}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.animated').forEach((el,i)=>{el.classList.add('animate__animated','animate__fadeInUp');el.style.setProperty('--animate-delay',`${i*0.1}s`);});});
-</script>
-</head><body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPプロダクトリテイリング - 無料で世界へ</title>
+  <meta name="description" content="あなたの商品を、リスクゼロで海外展開。中小企業・個人事業主様の海外進出を、完全無料でサポートいたします。">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="min-h-screen">
+    <!-- ナビゲーション -->
+    <nav class="bg-white py-4 px-6 shadow-sm fixed w-full z-50" id="navbar">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="logo-animation">
+          <a href="#" class="text-blue-600 font-bold text-xl">JPプロダクトリテイリング</a>
+        </div>
+        <ul class="flex space-x-6 menu-animation">
+          <li class="menu-item"><a href="#business" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">事業内容</a></li>
+          <li class="menu-item"><a href="#service" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">サービス</a></li>
+          <li class="menu-item"><a href="#risk" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">リスク対策</a></li>
+          <li class="menu-item"><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<header class="hero-bg py-20 text-center">
-  <h1 class="animated text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">無料で世界へ。</h1>
-  <p class="animated text-lg md:text-xl mb-8">あなたの商品を、リスクゼロで海外展開</p>
-  <img src="images/hero.jpg" alt="Hero" class="animated img-card mx-auto w-full max-w-4xl">
-</header>
+    <!-- ヒーローセクション -->
+    <div class="hero-section pt-24 pb-16 bg-gradient-to-br from-teal-700 to-blue-900 text-white relative overflow-hidden" id="hero">
+      <div class="absolute inset-0 bg-blue-900 opacity-10">
+        <div class="absolute inset-0 bg-pattern"></div>
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center hero-content">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 title-animation">
+            無料で世界へ。<br>
+            あなたの商品を、リスクゼロで海外展開
+          </h1>
+          <p class="text-lg md:text-xl mb-8 description-animation">
+            中小企業・個人事業主様の海外進出を、完全無料でサポートいたします。170以上の国と地域へ、50,000品目以上の商品を展開中。
+          </p>
+          <div class="button-animation">
+            <a href="#contact" class="inline-block bg-white text-blue-800 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-50 transition-all duration-300 button-hover">
+              無料相談はこちら
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="absolute bottom-0 left-0 w-full wave-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full">
+          <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </div>
 
-<section class="py-16">
- <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-  <img src="images/services.jpg" alt="Services" class="animated img-card w-full">
-  <img src="images/risk.jpg" alt="Risk" class="animated img-card w-full">
- </div>
-</section>
+    <!-- 事業内容セクション -->
+    <section id="business" class="py-16 bg-white section-animation">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16 title-fade-in">
+          事業内容
+        </h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 content-fade-in">
+          <p class="text-gray-700 mb-6">
+            弊社の主な事業は、お客様の商品の輸出販売代理と、自社商品の輸出販売でございます。
+          </p>
+          
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg box-slide-in">
+            <h3 class="text-xl font-semibold text-blue-800 mb-4">完全無料の輸出代行サービス</h3>
+            <p class="text-gray-700">
+              お客様の商品の販売代理につきましては、お客様に一切のご料金をご負担いただくことなく、無償で行っております。法人、個人事業主を問わず、無償で輸出代理を行い、海外の販路拡大のお手伝いをさせていただいております。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="py-16 bg-gray-50">
- <div class="max-w-6xl mx-auto p-6 bg-white rounded-xl shadow animate__animated animate__fadeIn">
-  <pre class="whitespace-pre-wrap leading-relaxed">JPプロダクトリテイリング 
+    <!-- サービスセクション -->
+    <section id="service" class="py-16 bg-gray-50 section-animation">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16 title-fade-in">
+          無償サービスの仕組み
+        </h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 content-fade-in">
+          <p class="text-gray-700">
+            無償でこのようなサービスを提供している理由につきましては、お客様からお金をいただくのではなく、海外の購入者様から手数料をいただいているためでございます。お客様にご負担いただく発生するコスト、リスク、トラブルは一切ございません。その全てを弊社が負担させていただきます。
+          </p>
+        </div>
+      </div>
+    </section>
 
-* 事業内容
-* サービス
-* リスク対策
-* お問い合わせ
+    <!-- リスク対策セクション -->
+    <section id="risk" class="py-16 bg-white section-animation">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16 title-fade-in">
+          リスク対策
+        </h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 content-fade-in">
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6 box-slide-in">
+            <h3 class="text-xl font-semibold text-blue-800 mb-4">安心のリスク対策</h3>
+            <p class="text-gray-700">
+              海外取引に伴うリスクは弊社が全て負担いたします。為替変動リスク、輸送中の破損リスク、支払い遅延リスクなど、あらゆるリスクから販売者様を守ります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-# 無料で世界へ。  
-あなたの商品を、リスクゼロで海外展開
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="py-16 bg-gray-50 section-animation">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-16 title-fade-in">
+          お問い合わせ
+        </h2>
+        
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 content-fade-in">
+          <div class="text-center fade-in-delay">
+            <p class="text-lg mb-6">無料相談・お問い合わせはこちらから承っております。お気軽にご連絡ください。</p>
+            <div class="button-hover-container">
+              <a href="mailto:contact@jpproductretail.com" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 button-hover">
+                お問い合わせはこちら
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-中小企業・個人事業主様の海外進出を、完全無料でサポートいたします。170以上の国と地域へ、50,000品目以上の商品を展開中。
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>© 2024 JPプロダクトリテイリング. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
 
-## 事業内容
-
-弊社の主な事業は、お客様の商品の輸出販売代理と、自社商品の輸出販売でございます。
-
-完全無料の輸出代行サービス
-
-お客様の商品の販売代理につきましては、お客様に一切のご料金をご負担いただくことなく、無償 で行っております。法人、個人事業主を問わず、無償で輸出代理を行い、海外の販路拡大のお手伝いをさせていただいております。
-
-## 無償サービスの仕組み
-
-無償でこのようなサービスを提供している理由につきましては、お客様からお金をいただくのではなく、海外の購入者様から手数料をいただいているためでございます。お客様にご負担いただく発生するコスト、リスク、トラブルは一切ございません。その全てを弊社が負担させていただきます。
-
-リスクゼロ、コストゼロの海外展開
-
-例えば、お客様が国内で1万円で販売されている商品が、リスクもコストもなく、そのままの価格の1万円で世界中に販売できるとすれば、かなり魅力的ではないでしょうか。もちろん、今まで通り国内での販売も継続しながらのことでございます。
-
-弊社は、販売代理をさせていただくお客様から料金を請求することはございませんが、海外で販売する際、海外の購入者様から手数料をいただく形式を取らせていただいております。そのため、実際には1万円の商品に対して、送料や様々な手数料を追加して販売いたしますが、お客様は国内で1万円で販売するのと全く同じ利益をお得いただくことが可能でございます。
-
-## 輸出リスクとその対策
-
-輸出する際に発生するコスト、リスク、トラブルには以下のようなものが考えられます：
-
-* 海外の購入者による返品
-* 海外の購入者による詐欺
-* 相手側の輸入関税支払い拒否による受取拒否
-* パテントトロールや商標トロールの脅威（後述いたします）
-* 輸出に関しての禁制品や、各国の輸入に関する禁制品
-* 輸出に関する様々な許可の取得
-* 現地通貨を受け取るための海外口座の取得
-* インコタームズと呼ばれる貿易取引に関する国際規定の理解
-* 国内の配送会社だけでなく、海外での配送会社との連携の必要性
-* 輸出入のための（返品を受け入れる際は輸入するため）知識
-* サーチャージ、容積重量によって変化する不確定な送料
-* 為替の変動による利益の変動
-* 各国に支払うべき手数料
-* 輸出入に詳しい税理士の必要性
-
-安心の全面サポート
-
-これらの輸出に関する件は全て弊社が負担させていただきますので、お客様はこのようなご心配を一切することなく、商品を海外に展開していただけます。
-
-### パテントトロール・商標トロールへの対策
-
-上記の問題で、特に最近話題になっておりますのは、日本の中小企業や個人事業主様をターゲットとしたパテント（特許）トロールや商標トロールの脅威でございます。X（旧Twitter）でお調べいただきますと、ほぼ毎日、このことに関して話題になっていることがおわかりいただけると存じます。それほど日本人にとって脅威となっております。
-
-このパテントトロールや商標トロールというのは、海外の法の抜け穴を利用した、かなり悪質なビジネスモデルでございまして、簡単に申し上げますと、製品などを一切製造しないにもかかわらず、特許権の行使のみを行い、高額な訴訟を行う企業や弁護士事務所でございます。和解金ビジネスとも呼ばれております（その理由は後述いたします）。
-
-パテントトロールは、GoogleやAppleなども被害に遭っております。わかりやすい有名な例といたしましては、ポケモンがポケットモンスターという名称を使用しておりますが、これをモンスターエナジードリンクのメーカーであるMonster Beverageが、モンスターという名称は自社のものだと訴えたものがございます。モンスターという表現は大昔からあるものでございますし、それの権利を主張するというのは、ポケモン側からすると、かなり理不尽に思える話でございます。現行法では取り締まることはできません。
-
-このような大企業は、この理不尽な訴えに対して、真っ向から勝負することもできますが、中小企業はそうもまいりません。というのも、この訴訟を起こされますと、プラットフォーム側の口座と、海外で使用している口座、それにまつわるアカウント、資産は全て、裁判所側から差し押さえされ停止されてしまいます。
-
-そのため、無視することは絶対にできないのでございますが、この理不尽な訴訟に戦うには、多額の報酬が必要な訴訟弁護士を雇う必要がございます。一般的には知財訴訟には、３人の訴訟弁護士が必要で、日本円で2億円から3億円ほどかかります。訴訟を行えば、ほぼ確実に勝てるような案件でございますが、そのようなコストを裁判のためだけに中小企業は払うことは難しいと存じます。
-
-そのため、訴訟を受けた中小企業や個人事業主の皆様は、和解金を支払うしかなくなってしまいます。このことに味を占めた悪徳集団が、和解金を目的として、かなり理不尽な形で片っ端から、輸出を行っている日本人の企業や個人事業主を一回で数百~数千件と標的にしております。
-
-弊社の対策
-
-弊社はそのような悪徳ビジネスモデルの方々から標的にならないよう、専門チームで対策を行っております。弊社は数万件にもおよぶ商品を輸出しているため、輸出する際のノウハウは全て持ち合わせております。まずはお気軽にご相談いただければ幸いでございます。
-
-## お問い合わせ
-
-海外展開についてのご相談は、以下のフォームからお気軽にお問い合わせください。 
-
-当社は沖縄県公安委員会許可の古物商です（許可番号 第971052200606号）
-
-### JPプロダクトリテイリング合同会社
-
-代表: 島袋 謙
-
-〒904-0116 沖縄県中頭郡北谷町字伊平204番地ベアーズコート桑江タウンリゾート801
-
-Email: contact@japan-product-retail.com
-
-© 2024 JPプロダクトリテイリング合同会社. All rights reserved.
-</pre>
- </div>
-</section>
-
-<section id="contact" class="py-20">
- <div class="max-w-3xl mx-auto text-center">
-  <h2 class="animated text-3xl font-bold mb-6">お問い合わせ</h2>
-  <form action="mailto:contact@japan-product-retail.com" method="post" enctype="text/plain" class="space-y-4 animated">
-   <input class="w-full p-3 border rounded" placeholder="お名前" required>
-   <input type="email" class="w-full p-3 border rounded" placeholder="メールアドレス" required>
-   <textarea rows="4" class="w-full p-3 border rounded" placeholder="お問い合わせ内容" required></textarea>
-   <button class="bg-blue-600 text-white px-8 py-3 rounded-full shadow hover:opacity-90">送信</button>
-  </form>
-  <img src="images/contact.jpg" alt="Contact" class="animated img-card mx-auto mt-10 w-full max-w-md">
- </div>
-</section>
-
-<footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">© 2024 JPプロダクトリテイリング合同会社.</footer>
-</body></html>
+  <script src="script.js"></script>
+</body>
+</html>

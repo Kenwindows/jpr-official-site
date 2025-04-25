@@ -1,0 +1,464 @@
+/* Base styles */
+:root {
+  --blue-50: #f0f9ff;
+  --blue-100: #e0f2fe;
+  --blue-500: #0ea5e9;
+  --blue-600: #0284c7;
+  --blue-700: #0369a1;
+  --blue-800: #075985;
+  --blue-900: #0c4a6e;
+  --teal-700: #0f766e;
+  --gray-50: #f9fafb;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-gray-700 {
+  color: var(--gray-700);
+}
+
+.text-blue-600 {
+  color: var(--blue-600);
+}
+
+.text-blue-800 {
+  color: var(--blue-800);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-50);
+}
+
+.bg-gray-800 {
+  background-color: var(--gray-800);
+}
+
+.bg-blue-50 {
+  background-color: var(--blue-50);
+}
+
+.bg-blue-600 {
+  background-color: var(--blue-600);
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-blue-500 {
+  border-color: var(--blue-500);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-blue-50:hover {
+  background-color: var(--blue-50);
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: var(--blue-700);
+}
+
+.hover\:text-blue-600:hover {
+  color: var(--blue-600);
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Custom styles */
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, var(--teal-700), var(--blue-900));
+}
+
+.bg-pattern {
+  background-image: url("cerulean-flow.png");
+  background-size: cover;
+  mix-blend-mode: overlay;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animation classes */
+.logo-animation {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.menu-animation {
+  opacity: 0;
+}
+
+.menu-item {
+  opacity: 0;
+}
+
+.title-animation {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+}
+
+.description-animation {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 0.4s forwards;
+}
+
+.button-animation {
+  opacity: 0;
+  animation: scaleIn 0.5s ease-out 0.6s forwards;
+}
+
+.wave-animation {
+  opacity: 0;
+  animation: waveAnimation 1s ease-out 0.8s forwards;
+}
+
+.title-fade-in {
+  opacity: 0;
+}
+
+.content-fade-in {
+  opacity: 0;
+}
+
+.box-slide-in {
+  opacity: 0;
+}
+
+.fade-in-delay {
+  opacity: 0;
+}
+
+.button-hover:hover {
+  transform: scale(1.05);
+}
+
+.button-hover:active {
+  transform: scale(0.95);
+}
+
+.button-hover-container {
+  display: inline-block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 1.875rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 1.875rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.125rem;
+  }
+
+  .space-x-6 > * + * {
+    margin-left: 1rem;
+  }
+
+  .px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .md\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+  }
+}
